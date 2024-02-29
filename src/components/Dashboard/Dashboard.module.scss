@@ -1,0 +1,118 @@
+
+.dashboardCard{
+  display: flex;
+  justify-content: space-between;
+}
+
+.expenseBtn{
+    cursor: pointer;
+    padding: 12px;
+}
+
+.expenseCard{
+    width: 35%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  margin: 0;
+
+  ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  text-align: right;
+  margin-right: 1rem;
+  width: 8rem;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1.2em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+   background: rgb(0 0 0 / 10%);
+  border-radius: 5px;
+}
+
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+}
+
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    border: #fff;
+    cursor: pointer;
+
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.checkbox{
+    display: inline-block;
+    vertical-align: top;
+    input,label{
+        width: auto;
+    }
+
+    label{
+        margin-left: 20px;
+    }
+}
